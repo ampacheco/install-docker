@@ -9,4 +9,4 @@ test:
 		$(VOLUME_MOUNTS) \
 		-w /v \
 		$(TEST_IMAGE) \
-		sh -c "sh $(VERSION).sh && docker -v"
+		sh -c "echo '' > /usr/bin/systemctl && sh $(VERSION).sh && docker -v"
